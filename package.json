@@ -1,0 +1,14 @@
+{
+	"name": "luna_alpha",
+	"version": "1.0.0",
+	"description": "Lunajs is a WYSIWYG HTML editor.",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"author": "Kirill Tregubov",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.16.4"
+	}
+}

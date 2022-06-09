@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS Library</title>
+	<link rel="stylesheet" href="luna.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="LunaArtboard.css" />
+	<script src="luna.js"></script>
+	<script src="examples.js"></script>
+	<script src="LunaArtboard.js"></script>
+</head>
+
+<body class="luna-demo">
+	<header>
+		<a href="index.html">
+			<svg id="luna-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650.378 650.378" width="650.378"
+				height="650.378">
+				<defs>
+					<rect width="650.378" height="650.378" />
+				</defs>
+				<path id="logo-glow"
+					d=" M 36.324 325.189 C 36.324 165.76 165.76 36.324 325.189 36.324 C 484.618 36.324 614.054 165.76 614.054 325.189 C 614.054 484.618 484.618 614.054 325.189 614.054 C 165.76 614.054 36.324 484.618 36.324 325.189 Z  M 101.189 325.189 C 101.189 201.56 201.56 101.189 325.189 101.189 C 448.818 101.189 549.189 201.56 549.189 325.189 C 549.189 448.818 448.818 549.189 325.189 549.189 C 201.56 549.189 101.189 448.818 101.189 325.189 Z "
+					fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="0.1" />
+				<circle vector-effect="non-scaling-stroke" cx="325.1891891891893" cy="325.1891891891893"
+					r="190.2702702702703" fill="rgb(235,235,235)" />
+				<path
+					d=" M 173.739 210.056 C 149.384 242.029 134.919 281.933 134.919 325.189 C 134.919 430.202 220.176 515.459 325.189 515.459 C 394.077 515.459 454.463 478.771 487.85 423.88 C 455.214 443.513 416.278 454.919 374.486 454.919 C 259.449 454.919 166.054 368.499 166.054 262.054 C 166.054 244.04 168.729 226.599 173.739 210.056 Z "
+					fill-rule="evenodd" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="275.29729729729746" cy="430.2162162162165"
+					r="33.72972972972974" fill="rgb(235,235,235)" />
+				<circle vector-effect="non-scaling-stroke" cx="396.76621621621604" cy="412.4256756756757"
+					r="47.55000000000001" fill="rgb(235,235,235)" />
+				<circle vector-effect="non-scaling-stroke" cx="275.2567567567566" cy="430.15945945945964"
+					r="27.770270270270203" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="396.7837837837837" cy="412.44324324324316"
+					r="42.56756756756755" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="456.10810810810716" cy="423.0783783783777"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="229.51351351351212" cy="224.15945945945862"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="269.0405405405406" cy="190.42972972973018"
+					r="25.013513513513715" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="419.78378378378255" cy="187.83513513513435"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+			</svg>
+		</a>
+		<ul>
+			<li><a class="active" href="examples.html">Examples</a></li>
+			<li><a href="documentation.html">Documentation</a></li>
+			<li>
+				<a href="https://github.com/csc309-fall-2021/js-library-tregubo1" target="_blank">
+					<svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+						</path>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<div id="landing">
+		<div>
+			<h1><span>Welcome to </span><span class="special">Luna.js!</span></h1>
+			<h3>A WYSIWYG HTML editor built in Vanilla JavaScript. No WordPress required.</h3>
+		</div>
+	</div>
+
+	<div id="mainPage">
+		<!-- <ul>
+			<li>Examples</li>
+		</ul> -->
+		<h1>Examples</h1>
+		<p>If this is your first time using Luna, consider checking out the <a class="link" href="documentation.html#GetStarted">Get Started</a> page.</p>
+
+		<div>
+			<h2>Barebones Luna instance</h2>
+			<p>The most barebones Lunajs instance. The following JavaScript code generates everything you see below:
+			<pre><code>
+	new Lunajs().init({
+		'targetElement': document.getElementById('example-one')
+	});
+			</code></pre>
+			</p>
+			<div class="exampleContainer" id="example-one"></div>
+		</div>
+
+		<div>
+			<h2>Luna Artboard Preview</h2>
+			<p>Luna Artboard is currently still in development but will eventually allow Luna users to store all their
+				Luna projects in one place, offline, locally, for free. For now, it's a great example of how Luna can be
+				leveraged in more advanced scenarios, such as when applying to jobs and generating unique cover letters
+				for each job application. The following JavaScript code uses the <code>LunaArtboard.js</code> script:
+			<pre><code><xmp>
+	new LunaArtboard().init(
+		'<div>Dear [Name of Hiring Manager]:</div><div>I would like to express my sincere interest in entering a position as an employee at your company.</div><div>As a recent graduate with experience in one, two, and three, I believe I am a strong candidate for the posted position.</div><div>You mentioned in the listing that you are looking for someone with strong [blank] skills and a [character trait]. As a [program] major at the University of Toronto, a member of [club name], and have multiple side projects with source code available upon request, I have become a skilled programmer with evidence of valuable experience.</div><div>My [list skills and traits] and eagerness to enter the technology business will make me an excellent employee. I would love to begin my career with your company and am confident that I would be a beneficial addition to [company name].</div><div>I have attached my resume to this message and I will call within the following week to try and arrange a time to speak together.</div><div>Thank you so much for your time and consideration.</div><div>Sincerely,</div><div>[Your name]</div><a href="mailto:email@mail.com">Email: email@mail.com</a><a href="tel:5555555555">Cell: (555) 555-5555</a><a href="https://linkedin.com/" target="_blank">LinkedIn</a>',
+		document.getElementById('example-two')
+	);
+			</xmp></code></pre>
+			</p>
+			<div class="exampleContainer" id="example-two"></div>
+		</div>
+
+		<div>
+			<h2>Simple Luna instance with Initial Content</h2>
+			<p>There are multiple parameters you can pass to the initializer to simplify the Luna interface. You can
+				also set the initial content using an HTML string or DOM element. The following JavaScript code
+				generates everything you see below:
+			<pre><code><xmp>
+	new Lunajs().init({
+		'targetElement': document.getElementById('example-two'),
+		'initialContent': '<h1>A simple instance of Luna.</h1><h2>It supports multiple text boxes.</h2><img src="https://images.unsplash.com/photo-1639793677434-b7c29536388a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" title="And even images!" alt="And even images!">',
+		'disableLaunchpad': true,
+		'hideSizeButtons': true,
+		'hideExportButton': true
+	});
+			</xmp></code></pre>
+			</p>
+			<div class="exampleContainer" id="example-three"></div>
+		</div>
+
+		<div>
+			<h2>Simple Luna instance with Components</h2>
+			<p>You can pass components in an appropriately-named array to the initializer, and they'll show up in the
+				Component Library. The following JavaScript code generates everything you see below:
+			<pre><code><xmp>
+	new Lunajs().init({
+		'targetElement': document.getElementById('example-three'),
+		'hideSizeButtons': true,
+		'hideExportButton': true,
+		components: [
+			new Component({ name: 'Heading 1', innerHTML: '<h1>A simple instance of Luna.</h1>'}),
+			new Component({ name: 'Heading 2', innerHTML: '<h2>It supports multiple text boxes.</h2>'}),
+			new Component({ name: 'Image', innerHTML: '<img src="https://images.unsplash.com/photo-1639793677434-b7c29536388a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" title="And even images!" alt="And even images!">'})
+		]
+	});
+			</xmp></code></pre>
+			</p>
+			<div class="exampleContainer" id="example-four"></div>
+		</div>
+
+		<div>
+			<h2>Simple Luna instance with Components added after initialization</h2>
+			<p>Don't forget that you can also call Lunajs methods programmatically. Instead of passing in the components
+				to the initializer, you can add each component using a function. The following JavaScript code generates
+				the same instance as the previous example:
+			<pre><code><xmp>
+	const lunaInstance = new Lunajs().init({
+		'targetElement': document.getElementById('example-four'),
+		'hideSizeButtons': true,
+		'hideExportButton': true
+	});
+	lunaInstance.addComponent(new Component({ name: 'Heading 1', innerHTML: '<h1>A simple instance of Luna.</h1>'}));
+	lunaInstance.addComponent(new Component({ name: 'Heading 2', innerHTML: '<h2>It supports multiple text boxes.</h2>'}));
+	lunaInstance.addComponent(new Component({ name: 'Image', innerHTML: '<img src="https://images.unsplash.com/photo-1639793677434-b7c29536388a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" title="And even images!" alt="And even images!">'}));
+			</xmp></code></pre>
+			</p>
+			<div class="exampleContainer" id="example-five"></div>
+		</div>
+
+		<div>
+			<h2>Simple Luna instance with Custom Control</h2>
+			<p>You can programmatically add controls to the interface using <code>Lunajs.addControl()</code>. Since the
+				callback can be any function, the possibilities are infinite. The following JavaScript code generates
+				everything you see below:
+			<pre><code><xmp>
+	const lunaInstance = new Lunajs().init({
+		'targetElement': document.getElementById('example-four'),
+		'disableLaunchpad': true,
+		'hideSizeButtons': true,
+		'hideExportButton': true
+	});
+	lunaInstance.addControl({
+		name: 'my-awesome-controls',
+		'aligned': 'left',
+		controls: [
+			{
+				'label': 'My Control',
+				'callback': () => alert('Pressed my awesome control.'),
+				'setActive': true
+			}
+		]
+	})
+			</xmp></code></pre>
+			</p>
+			<div class="exampleContainer" id="example-six"></div>
+		</div>
+	</div>
+</body>
+
+</html>

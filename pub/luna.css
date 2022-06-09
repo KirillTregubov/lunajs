@@ -1,0 +1,469 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+	font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+body {
+	/* min-height: 100vh; */
+	background-color: white;
+	margin: 0;
+}
+
+#landing {
+	padding: 2rem;
+}
+
+#page {
+	width: 100%;
+}
+
+pre code {
+	background-color: #242424;
+	color: white;
+	border-radius: 6px;
+	display: block;
+	white-space: pre;
+	max-width: 100%;
+	min-width: 100px;
+	padding: 0;
+}
+
+code {
+	font-size: 1rem;
+}
+
+img {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+a {
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+
+#luna-warning {
+	display: none;
+}
+
+#luna-colony {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #1b1b1b;
+	transition: width 0.25s ease-in-out;
+	--luna-peripheral-height: 3.5rem;
+	--luna-launchpad-width: 300px;
+	--luna-control-panel-width: 300px;
+}
+
+#luna-colony.standalone {
+	height: 100vh;
+}
+
+#luna-colony h1 {
+	font-size: 1.35rem;
+	font-weight: 600;
+	margin: 1.25rem 0 0.5rem 0;
+}
+
+#luna-colony h2 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin: 1.25rem 0 0.25rem 0;
+}
+
+#luna-colony button {
+	font-family: unset;
+	border: 0;
+	cursor: pointer;
+}
+
+#luna-launchpad {
+	flex: none;
+	box-sizing: border-box;
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	width: var(--luna-launchpad-width);
+	padding: 1rem 1.5rem;
+	height: 100%;
+	color: white;
+	background-color: #242424;
+	font-size: 1rem;
+	overflow-y: auto;
+	transition: opacity 0.25s ease-in-out;
+}
+
+#luna-colony #luna-launchpad h1 {
+	margin-bottom: 1.25rem;
+}
+
+#luna-launchpad>div {
+	margin-bottom: 1rem;
+}
+
+#luna-launchpad>div:last-child {
+	margin-bottom: 0;
+}
+
+#luna-colony #luna-launchpad h2 {
+	margin-top: 0.5rem;
+}
+
+.luna-rocket {
+	box-sizing: border-box;
+	line-height: 0px;
+	width: 100%;
+	/* min-height: 150px; */
+	background-color: #1b1b1b;
+	padding: 0.5rem;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.luna-rocket * {
+	pointer-events: none;
+	line-height: normal;
+}
+
+#luna-interface {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+#luna-interface > :nth-child(2) {
+	flex: 1;
+}
+
+#luna-mission-control {
+	display: none;
+	opacity: 0;
+	width: 100%;
+	transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out;
+}
+
+#luna-base {
+	box-sizing: border-box;
+	margin: 1rem;
+	height: calc(100% - var(--luna-peripheral-height) - 2rem);
+	width: calc(100% - 2rem);
+	overflow: auto;
+	transition: width 0.25s ease-in-out;
+}
+
+/* #luna-colony.luna-control-panel-showing #luna-base {
+	width: calc(100% - 2rem - var(--luna-control-panel-width));
+}
+
+#luna-colony.luna-launchpad-showing #luna-base {
+	width: calc(100% - 2rem - var(--luna-launchpad-width));
+	margin-left: calc(var(--luna-launchpad-width) + 1rem);
+}
+
+#luna-colony.luna-launchpad-showing.luna-control-panel-showing #luna-base {
+	width: calc(100% - 2rem - var(--luna-control-panel-width) - var(--luna-launchpad-width));
+} */
+
+#luna-habitat-area {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+
+#luna-habitat-info {
+	position: absolute;
+	right: 6px;
+	bottom: 0;
+	display: inline-block;
+	background-color: #5BC2B6;
+	border-radius: 0 0 4px 4px;
+	padding: 0.25rem 0.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+#luna-habitat {
+	/* background-color: white; */
+	position: relative;
+	border-width: unset;
+	border-style: unset;
+	border-color: initial;
+	border-image: initial;
+	display: block;
+	width: 100%;
+	height: calc(100% - 1.75rem);
+	border-radius: 6px;
+	transition: all 0.25s ease-in-out;
+}
+
+/* .luna-selected {
+	border: 1px dashed blue !important;
+	border-radius: 3px !important;
+} */
+
+.customclass {
+	background-color: purple;
+}
+
+#luna-launchpad+#luna-mission-control #luna-controls {
+	margin-left: var(--luna-launchpad-width);
+}
+
+#luna-controls {
+	flex: 1;
+	display: flex;
+	padding: 1rem 1rem 0 1rem;
+	transition: width 0.25s ease-in-out;
+}
+
+#luna-controls > :first-child {
+	margin-left: 0 !important;
+}
+
+#luna-controls>div {
+	display: flex;
+}
+
+#luna-controls button {
+	user-select: none;
+	margin-right: 0.5rem;
+	color: white;
+	font-size: 0.85rem;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	background-color: #2f2f2f;
+	padding: 0.5rem 0.5rem;
+	border-radius: 6px;
+	transition: background-color 0.15s ease-in-out;
+	border-width: 0;
+	line-height: 0;
+}
+
+#luna-controls button:last-child {
+	margin-right: 0rem;
+}
+
+#luna-controls button.wide {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+
+#luna-controls button:hover:not([disabled]) {
+	color: #1b1b1b;
+	background-color: #5BC2B6;
+}
+
+#luna-controls button.active:not([disabled]) {
+	color: #1b1b1b;
+	background-color: #5BC2B6;
+}
+
+#luna-controls button:disabled {
+	color: #7e7e7e;
+	cursor: not-allowed;
+}
+
+#luna-export-control button,
+#luna-export-control button.active {
+	color: #1b1b1b;
+	background-color: white;
+}
+
+#luna-export-control button:hover {
+	color: #1b1b1b;
+	background-color: #5BC2B6;
+}
+
+#luna-control-panel {
+	height: 100%;
+	box-sizing: border-box;
+	/* position: absolute;
+	top: 0;
+	right: 0; */
+	width: var(--luna-control-panel-width);
+	/* height: 100vh; */
+	color: white;
+	background-color: #242424;
+	font-size: 1rem;
+	padding: 1rem 1.5rem;
+	overflow-y: auto;
+	transition: opacity 0.25s ease-in-out;
+}
+
+#luna-control-panel div.luna-container {
+	display: flex;
+	align-items: center;
+	margin: 1.25rem 0 0.5rem 0;
+}
+
+#luna-control-panel div.luna-container h1 {
+	margin: 0;
+}
+
+#luna-control-panel div.luna-container button {
+	margin-left: auto;
+	font-weight: 600;
+	padding: 0.35rem 0.35rem;
+	line-height: 0;
+	color: #1b1b1b;
+	background-color: white;
+}
+
+#luna-control-panel div.luna-container button:hover {
+	color: #1b1b1b;
+	background-color: #5BC2B6;
+}
+
+#luna-control-panel div.luna-container button svg {
+	width: 20px;
+	height: 20px;
+}
+
+#luna-control-panel button.luna-delete-button {
+	width: 100%;
+	margin: 1.25rem 0 0 0;
+	font-weight: 600;
+	color: #fee2e2;
+	background-color: #7f1d1d;
+	transition: background-color 0.15s ease-in-out;
+}
+
+#luna-control-panel button.luna-delete-button:hover {
+	background-color: #b91c1c;
+}
+
+#luna-control-panel button {
+	color: inherit;
+	background-color: #2c7b77;
+	padding: 0.5rem 0.75rem;
+	border-radius: 6px;
+}
+
+#luna-control-panel button.wide {
+	width: 100%;
+	margin-top: 0.35rem;
+}
+
+#luna-control-panel label {
+	display: inline-block;
+	font-size: inherit;
+}
+
+#luna-control-panel input {
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 0;
+	padding: 0.35rem;
+	background-color: #fbfefd;
+	border-radius: 6px;
+	border: 0;
+	border-image: initial;
+}
+
+#luna-control-panel input[type="checkbox"] {
+	margin-top: 1px;
+	width: auto;
+}
+
+#luna-control-panel input[type="color"] {
+	height: 50px;
+}
+
+#luna-control-panel>:first-child {
+	margin-top: 0;
+}
+
+#luna-control-panel .luna-control-panel-spacing>div {
+	display: flex;
+	width: 100%;
+}
+
+#luna-control-panel .luna-control-panel-spacing .luna-control-panel-input {
+	margin-left: 1rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#luna-control-panel .luna-control-panel-spacing .luna-control-panel-input>div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.25rem;
+}
+
+#luna-control-panel .luna-control-panel-spacing .luna-control-panel-input>div:last-child {
+	margin-bottom: 0;
+}
+
+#luna-control-panel .luna-control-panel-spacing .luna-control-panel-input input {
+	width: 75px;
+	margin-left: auto;
+}
+
+#luna-control-panel #luna-control-panel-classlist {
+	margin-bottom: 0.25rem;
+}
+
+#luna-control-panel #luna-control-panel-classlist button {
+	margin-right: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+#luna-control-panel #luna-control-panel-addclass {
+	display: flex;
+	overflow: hidden;
+	border-radius: 8px;
+	background-color: #fbfefd;
+	border: 1px solid #fbfefd;
+}
+
+#luna-control-panel #luna-control-panel-addclass button {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	flex-shrink: 0;
+}
+
+#luna-control-panel .flex {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.35rem;
+}
+
+#luna-control-panel .flex label {
+	margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	#luna-colony {
+		display: none;
+	}
+
+	#luna-warning {
+		padding: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		background-color: #1b1b1b;
+		color: white;
+		height: 100%;
+		width: 100%;
+	}
+
+	#luna-warning.standalone {
+		height: 100vh;
+	}
+}

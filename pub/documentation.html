@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS Library</title>
+	<link rel="stylesheet" href="luna.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="luna.js"></script>
+</head>
+
+<body class="luna-demo">
+	<header>
+		<a href="index.html">
+			<svg id="luna-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650.378 650.378" width="650.378"
+				height="650.378">
+				<defs>
+					<rect width="650.378" height="650.378" />
+				</defs>
+				<path id="logo-glow"
+					d=" M 36.324 325.189 C 36.324 165.76 165.76 36.324 325.189 36.324 C 484.618 36.324 614.054 165.76 614.054 325.189 C 614.054 484.618 484.618 614.054 325.189 614.054 C 165.76 614.054 36.324 484.618 36.324 325.189 Z  M 101.189 325.189 C 101.189 201.56 201.56 101.189 325.189 101.189 C 448.818 101.189 549.189 201.56 549.189 325.189 C 549.189 448.818 448.818 549.189 325.189 549.189 C 201.56 549.189 101.189 448.818 101.189 325.189 Z "
+					fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="0.1" />
+				<circle vector-effect="non-scaling-stroke" cx="325.1891891891893" cy="325.1891891891893"
+					r="190.2702702702703" fill="rgb(235,235,235)" />
+				<path
+					d=" M 173.739 210.056 C 149.384 242.029 134.919 281.933 134.919 325.189 C 134.919 430.202 220.176 515.459 325.189 515.459 C 394.077 515.459 454.463 478.771 487.85 423.88 C 455.214 443.513 416.278 454.919 374.486 454.919 C 259.449 454.919 166.054 368.499 166.054 262.054 C 166.054 244.04 168.729 226.599 173.739 210.056 Z "
+					fill-rule="evenodd" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="275.29729729729746" cy="430.2162162162165"
+					r="33.72972972972974" fill="rgb(235,235,235)" />
+				<circle vector-effect="non-scaling-stroke" cx="396.76621621621604" cy="412.4256756756757"
+					r="47.55000000000001" fill="rgb(235,235,235)" />
+				<circle vector-effect="non-scaling-stroke" cx="275.2567567567566" cy="430.15945945945964"
+					r="27.770270270270203" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="396.7837837837837" cy="412.44324324324316"
+					r="42.56756756756755" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="456.10810810810716" cy="423.0783783783777"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="229.51351351351212" cy="224.15945945945862"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="269.0405405405406" cy="190.42972972973018"
+					r="25.013513513513715" fill="rgb(202,202,202)" />
+				<circle vector-effect="non-scaling-stroke" cx="419.78378378378255" cy="187.83513513513435"
+					r="10.378378378378386" fill="rgb(202,202,202)" />
+			</svg>
+		</a>
+		<ul>
+			<li><a href="examples.html">Examples</a></li>
+			<li><a class="active" href="documentation.html">Documentation</a></li>
+			<li>
+				<a href="https://github.com/csc309-fall-2021/js-library-tregubo1" target="_blank">
+					<svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+						</path>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<div id="landing">
+		<div>
+			<h1><span>Welcome to </span><span class="special">Luna.js!</span></h1>
+			<h3>A WYSIWYG HTML editor built in Vanilla JavaScript. No WordPress required.</h3>
+		</div>
+	</div>
+
+	<div id="mainPage" class="docs">
+		<ul class="menu">
+			<p>Documentation</p>
+			<li><a href="#GetStarted">Get Started</a></li>
+			<li><a href="#Usage">Interface Usage</a></li>
+			<li><a href="#InitializerOptions">Initializer Options</a></li>
+			<li><a href="#Data">Stored Data</a></li>
+			<li><a href="#Functions">Available Functions</a></li>
+			<li><a href="#Component">Creating a Component</a></li>
+		</ul>
+		<div>
+			<div id="GetStarted">
+				<h1>Get Started</h1>
+				<p>To get started you must download and add the <a class="link" href="https://github.com/csc309-fall-2021/js-library-tregubo1/blob/main/pub/luna.js" target="_blank">luna script file</a> and <a class="link" href="https://github.com/csc309-fall-2021/js-library-tregubo1/blob/main/pub/luna.css" target="_blank">stylesheet</a> to your document head.</p>
+				<pre><code><xmp>
+	<head>
+		<script src="luna.js"></script>
+		<link rel="stylesheet" href="luna.css" />
+	</head>
+				</xmp></code></pre>
+				<p>Now you are able to call the Lunajs initializer and create an interface using the following code:</p>
+				<pre><code>
+	new Lunajs().init();
+				</code></pre>
+				</p>
+			</div>
+
+			<div id="Usage">
+				<h1>Interface Usage</h1>
+				<p>The Luna interface currently supports all the Mission Control buttons, the Component Library, and the Control Panel. To choose an element to edit in the Control Panel, simply click on it to select it.</p>
+			</div>
+
+			<div id="InitializerOptions" class="docPage">
+				<h1>Initializer Options</h1>
+				<p>Here are all the initializer options you can specify.</p>
+				<pre><code>
+	{
+		'debug': true || false, // enable debug console output
+		'initialContent': HTML String || DOM Element, // initial content in interface
+		'targetElement': HTML String || DOM Element, // element to attach Luna interface to
+		'useStylesheets': true || false, // copy stylesheets from document
+		'removeInitialContent': true || false, // remove initialContent if it's a DOM element
+		'showSizeButtons': true || false OR 'hideShowButtons': true || false, // show or hide size buttons
+		'showRevisionHistory': true || false OR 'hideRevisionHistory': true || false, // show or hide revision history
+		'showExportButton': true || false OR 'hideExportButton': true || false, // show or hide export button
+		'disableLaunchpad': true,
+		'overwriteIds': { // pass in one of the following keys with a value to overwrite them (showing default value)
+			colonyId: 'luna-colony',
+			interfaceId: 'luna-interface',
+			warningId: 'luna-warning',
+			launchpadId: 'luna-launchpad',
+			launchpadWarningId: 'luna-launchpad-warning',
+			missionControlId: 'luna-mission-control',
+			lunaControlsId: 'luna-controls',
+			baseId: 'luna-base',
+			habitatAreaId: 'luna-habitat-area',
+			habitatId: 'luna-habitat',
+			habitatInfoId: 'luna-habitat-info',
+			controlPanelId: 'luna-control-panel',
+			selectedClass: 'luna-selected',
+			rocketClass: 'luna-rocket',
+			controlPanelShowingClass: 'luna-control-panel-showing',
+			launchpadShowingClass: 'luna-launchpad-showing'
+		}, // BE CAREFUL AS THIS MESSES WITH STYLING
+		'components': [
+			{ Component instance }
+		]
+	}
+				</code></pre>
+				</p>
+			</div>
+
+			<div id="Data" class="docPage">
+				<h1>Stored Data</h1>
+				<p>Here are all the variables stored inside a Lunajs instance.</p>
+				<pre><code>
+	{
+		'debug': true, // whether to output debug messages to console
+		'actions': {
+			'actionName': { action object } // actions available in Control Panel
+		},
+		'controlPanels': {
+			'controlPanel': { panel object } // panels available in Control Panel
+		},
+		'colony': div#luna-colony, // colony DOM element, contains entire editor instance
+		'missionControl': {
+			'element': div#luna-mission-control, // mission control DOM element, contains buttons and sidebar
+			'controlPanel': {
+				'element': div#luna-control-panel, // control panel DOM element, is the sidebar that edits properties
+				'selectedElement': div // selected element DOM element
+			},
+			'controls': {
+				'element': div#luna-controls, // controls DOM element, contains resize buttons and export button
+				'luna-size-control': {
+					'element': div#luna-size-control, // DOM element containing resize buttons
+				},
+				'luna-export-control': {
+					'element': div#luna-export-control, // DOM element containing export button
+				}
+			}
+		},
+		'launchpad': {
+			'element': div#luna-launchpad // DOM element, contains component library
+		},
+		'habitat': {
+			'element': div#luna-habitat // DOM element, contains iframe
+		},
+		'habitatInfo': {
+			'element': div#luna-habitat // DOM element, contains bottom right label
+		},
+		'lunaWarning': {
+			'element': div#luna-warning // DOM element, contains screen width warning
+		}
+	}
+				</code></pre>
+				</p>
+			</div>
+
+			<div id="Functions" class="docPage">
+				<h1>Available Functions</h1>
+				<p>Here are all functions available in a Lunajs instance.</p>
+				<pre><code>
+	Lunajs.init(parameters); // initializes and returns Luna instance
+	Lunajs.exportToFile(); // exports Habitat contents to HTML fill-rule
+	Lunajs.close(); // closes Luna instance and returns Habitat contents
+	Lunajs.addComponent(component); // add component to Component Library
+	Lunajs.addControl(); // add control to Mission Control
+	Lunajs.exportToFile(); // exports Habitat contents to HTML fill-rule
+	Lunajs.resetControlPanel(); // resets Control Panel (hiding it)
+	Lunajs.resetHabitatSize(); // resets Habitat Size to Fit
+	Lunajs.setHabitatSize(label, width, height); // set Habitat Size to width px x height px and update label
+	Lunajs.selectElement(); // select element to be edited in Control Panel
+	Lunajs.updateState(); // updates Mission Control state
+				</code></pre>
+				</p>
+			</div>
+	
+			<div id="Component" class="docPage">
+				<h1>Creating a Component</h1>
+				<p>Here is how to create a Component instance.</p>
+				<pre><code>
+	new Component ({
+		'name': 'Component name', // name of component
+		'innerHTML': 'HTML string' // premade component HTML
+	})
+				</code></pre>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
