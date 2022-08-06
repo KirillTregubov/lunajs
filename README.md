@@ -1,4 +1,5 @@
 # Luna.js
+
 A dependency-free JavaScript WYSIWYG HTML editor built by Kirill Tregubov. No WordPress required.
 
 [View Demo](https://lunajs.herokuapp.com/)
@@ -10,12 +11,13 @@ A dependency-free JavaScript WYSIWYG HTML editor built by Kirill Tregubov. No Wo
 [View Library Source](https://lunajs.herokuapp.com/luna.js)
 
 ## Get Started
-To get started you must download and add the [luna script file](https://github.com/csc309-fall-2021/js-library-tregubo1/blob/main/pub/luna.js) and [stylesheet](https://github.com/csc309-fall-2021/js-library-tregubo1/blob/main/pub/luna.css) to your document head.
+
+To get started you must download and add the [luna script file](https://github.com/KirillTregubov/lunajs/blob/main/pub/luna.js) and [stylesheet](https://github.com/KirillTregubov/lunajs/blob/main/pub/luna.css) to your document head.
 
 ```html
 <head>
-	<script src="luna.js"></script>
-	<link rel="stylesheet" href="luna.css" />
+  <script src="luna.js"></script>
+  <link rel="stylesheet" href="luna.css" />
 </head>
 ```
 
