@@ -95,7 +95,7 @@ svg {
   position: relative;
   /* padding-left: 2rem; */
   margin-left: auto;
-  max-width: 1080px;
+  max-width: 1152px;
 }
 
 #landing .demo>div.badge {
@@ -269,7 +269,7 @@ ul.menu li a {
   display: inline-block;
   /* margin: 0.5rem 4.5rem; */
 
-  --device-height: clamp(600px, 55vw, 650px);
+  --device-height: clamp(500px, 55vw, 648px);
   /* clamp(0px, 70vh, 850px) */
   /* 700px */
 }
