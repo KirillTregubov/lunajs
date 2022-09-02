@@ -2,13 +2,13 @@
 
 A dependency-free JavaScript WYSIWYG HTML editor built by Kirill Tregubov. No WordPress required.
 
-[View Demo](https://lunajs.herokuapp.com/)
+[View Demo](https://lunajs.vercel.app/)
 
-[View Examples](https://lunajs.herokuapp.com/examples.html)
+[View Examples](https://lunajs.vercel.app/examples.html)
 
-[View Documentation](https://lunajs.herokuapp.com/documentation.html)
+[View Documentation](https://lunajs.vercel.app/documentation.html)
 
-[View Library Source](https://lunajs.herokuapp.com/luna.js)
+[View Library Source](https://lunajs.vercel.app/luna.js)
 
 ## Get Started
 
