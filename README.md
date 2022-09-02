@@ -12,7 +12,7 @@ A dependency-free JavaScript WYSIWYG HTML editor built by Kirill Tregubov. No Wo
 
 ## Get Started
 
-To get started you must download and add the [luna script file](https://github.com/KirillTregubov/lunajs/blob/main/pub/luna.js) and [stylesheet](https://github.com/KirillTregubov/lunajs/blob/main/pub/luna.css) to your document head.
+To get started you must download and add the [luna script file](https://github.com/KirillTregubov/lunajs/blob/main/luna.js) and [stylesheet](https://github.com/KirillTregubov/lunajs/blob/main/luna.css) to your document head.
 
 ```html
 <head>
